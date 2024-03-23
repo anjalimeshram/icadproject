@@ -1,0 +1,1271 @@
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+            }
+          
+
+            #container {
+
+
+                height: 88%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+
+            #head {
+                height: 12%;
+                display: flex;
+                align-items: center;
+                background-color: #EDEAED;
+                position: -webkit-sticky;
+                top: 0;
+                position: sticky;
+                z-index: 1000;
+
+
+
+            }
+
+
+            .logo {
+                padding-left: 4%;
+                padding-top: 1px;
+            }
+
+            nav {
+                flex: 1;
+                text-align: right;
+                padding-top: 5px;
+
+            }
+
+            nav ul li {
+                list-style: none;
+                display: inline-block;
+                margin-left: 20px;
+                padding-right: 5%;
+                font-size: 21px;
+
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 160px;
+                transition: 0.3s;
+                box-shadow: 0px 8px 10px 0px grey;
+                border-radius: 10px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                font-size: 14;
+                color: #261665;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #464c52;
+                color: white;
+                border-radius: 4px;
+                box-shadow: 4px 0 8px 0 grey;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            #ban {
+                text-align: center;
+                background-color: rgba(11, 47, 82, 0.457);
+                color: whitesmoke;
+                width: 100%;
+                /* line-height: 70px; */
+                height: 98%;
+                /* border: 2px solid rgba(11, 47, 82, 0.457); */
+                padding: 1% 0 0 0;
+
+                margin: 0px;
+                /* line-height: 30px; */
+                /* margin-top: 250px; */
+            }
+
+            #ban1 {
+                /* border: 5px solid red; */
+                width: 28%;
+                border-radius: 50px;
+                margin-left: 180px;
+                box-shadow: 0px 5px 14px 10px white;
+                background-color: #002347;
+                height: 10%;
+                line-height: 100px;
+                font-family: Comic Sans MS;
+                margin-top: 250px;
+                padding-top: 25px;
+                font-size: 44px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+
+            #se10 {
+                background-color: #002347;
+                height: 60%;
+                border: 2px solid white;
+                clear: both;
+                margin-top: 145%;
+                border: 2px solid black;
+
+            }
+
+            .he11 {
+                margin: 10px;
+
+                height: 150px;
+                float: left;
+                margin-left: 65px;
+                /* border: 2px solid white; */
+                margin-top: 90px;
+                padding: 15px;
+            }
+
+            .he12 {
+                width: fit-content;
+                margin-bottom: 40px;
+                position: relative;
+                color: white;
+
+            }
+
+            #se1 {
+                margin: 10px;
+                width: 320px;
+
+                height: 150px;
+                float: left;
+                margin-left: 45px;
+                margin-top: 30px;
+                padding: 15px;
+            }
+
+            .se2 {
+                color: white;
+                font-size: 25px;
+            }
+
+            .se3 {
+                color: wheat;
+            }
+
+            #se4 {
+                margin: 10px;
+                width: 220px;
+
+                height: 270px;
+                float: left;
+                margin-left: 40px;
+                margin-top: 30px;
+                padding: 15px;
+            }
+
+            .se5 {
+                color: white;
+                font-size: 25px;
+            }
+
+            .se6 {
+                color: wheat;
+                font-size: 20px;
+                list-style: none;
+                line-height: 30px;
+            }
+
+            #s7 {
+                margin: 10px;
+                width: 320px;
+                height: 300px;
+
+                float: left;
+                margin-left: 30px;
+                margin-top: 30px;
+                padding: 15px;
+            }
+
+            .s8 {
+                color: white;
+                font-size: 25px;
+
+            }
+
+            .s9 {
+                color: wheat;
+            }
+
+            #s10 {
+
+                clear: both;
+                margin-top: 200px;
+                text-align: center;
+                font-size: 20px;
+                background-color: #002347;
+            }
+
+            .s11 {
+                color: white;
+                clear: both;
+
+
+            }
+
+            iframe {
+                width: 80%;
+                margin-left: 160px;
+                height: 500px;
+                border: 2px solid black;
+                margin-top: 70px;
+            }
+
+            .contact {
+                height: 300px;
+                /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+                /* background-position: inherit; */
+                /* background-attachment: scroll; */
+                /* background-color: #002347; */
+                text-align: center;
+                color: white;
+                padding-top: 150px;
+                margin-top: 10%;
+                border: 2px solid black;
+                /* padding-bottom: 10px; */
+                /* border: 1px solid grey; */
+                box-shadow: 4px 0 8px 0 grey;
+            }
+
+            .contact a {
+                text-decoration: none;
+                color: rgb(1, 0, 78);
+            }
+
+            .contact h1 {
+                display: inline;
+                background: rgb(0, 11, 75, 0.7);
+            }
+
+            .contact h1 {
+                padding: 10px 50px 10px 50px;
+                border-radius: 20px;
+                box-shadow: 4px 0 10px 0 white;
+                animation: infinite 1s cont;
+            }
+
+            /* @keyframes cont{
+    0%{box-shadow: 4px 0 10px 0 white;}
+    50%{box-shadow: 4px 1px 50px 1px white;}
+    100%{box-shadow: 4px 0 10px 0 white;}
+} */
+            .mapss {
+                width: 92%;
+                text-align: center;
+                margin: 50px;
+                border-radius: 20px;
+                box-shadow: 4px 0 10px 0 grey;
+            }
+
+            .address {
+                /* border: 1px solid grey; */
+                padding: 30px 100px 0 100px;
+                height: 350px;
+                margin-top: 7%;
+                background-color: rgb(228, 228, 228);
+            }
+
+            .address h4 {
+                font-size: 18;
+                font-weight: bold;
+            }
+
+            .address p {
+                font-size: 17;
+            }
+
+            .address td {
+                padding: 15px;
+            }
+
+            .address .left {
+                float: left;
+                width: 400px;
+                /* border: 1px solid grey; */
+            }
+
+            .address .right {
+                /* border: 1px solid grey; */
+                width: 700px;
+                float: right;
+            }
+
+            .cont .left {
+                width: 300px;
+                float: left;
+            }
+
+            .cont .left input[type=text] {
+                width: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
+
+
+            .cont .right {
+                width: 400px;
+                float: right;
+            }
+
+            .cont .right input[type=submit] {
+                border: none;
+                background-color: #FDC632;
+                color: #002347;
+                margin-top: 10px;
+                width: 50%;
+                font-weight: bolder;
+                padding: 10px;
+                font-size: 20;
+            }
+
+            .cont .right textarea {
+                width: 100%;
+                border: 1px;
+                background-color: white;
+            }
+
+            .left p {
+                font-size: 18px;
+            }
+
+            .pi1 {
+                color: white;
+                text-decoration: none;
+            }
+
+            .gre-head {
+                background-color: #002347;
+                color: #002347;
+                height: 50%;
+                border: 1px solid black;
+                text-align: center;
+                padding-top: 150px;
+            }
+
+            .gre-head a {
+                background-color: #002347;
+                text-decoration: none;
+                color: white;
+            }
+
+            .gre-head p {
+                color: white;
+            }
+
+            .gre-head h1 {
+                text-align: center;
+                box-shadow: 4px 0px 20px 0px white;
+                margin-left: 25%;
+                padding: 10px 5px 10px 5px;
+                background-color: white;
+                width: 50%;
+                animation: gre infinite 5s;
+            }
+
+            @keyframes gre {
+                0% {
+                    border-radius: 50% 1% 1% 1%;
+                }
+
+                25% {
+                    border-radius: 1% 50% 1% 1%;
+                }
+
+                50% {
+                    border-radius: 1% 1% 50% 1%;
+                }
+
+                75% {
+                    border-radius: 1% 1% 1% 50%;
+                }
+
+                100% {
+                    border-radius: 50% 1% 1% 1%;
+                }
+            }
+
+            .main-gre-left {
+                float: left;
+                /* border: 2px solid black; */
+                margin-top: 4%;
+                height: 180%;
+                width: 65%;
+                /* overflow: scroll;
+    scroll-snap-type: proximity; */
+                text-align: center;
+                padding-top: 2%;
+                padding-bottom: 1%;
+            }
+
+            .main-gre-left h2 {
+                border-radius: 5px;
+                color: #002347;
+
+                margin-left: 0%;
+                margin-top: 0px;
+                /* border: 2px solid black; */
+                /* border-bottom: 2px solid rgb(182, 182, 0); */
+                /* border-top: 2px solid #A30000; */
+                width: 22%;
+            }
+
+            .main-gre-left h4 {
+                border-radius: 5px;
+                color: #002347;
+                font-size: 18px;
+                text-align: left;
+                margin-left: 30px;
+                /* border-bottom: 2px solid  rgb(182, 182, 0); */
+                /* border-top: 2px solid #A30000; */
+                /* border: 2px solid black; */
+                width: 40%;
+
+            }
+
+            .main-gre-left img {
+                border-radius: 2%;
+                box-shadow: 4px 0px 8px 0px grey;
+                /* border: 2px solid black; */
+            }
+
+            .main-gre-left p {
+                padding: 10px 20px 20px 20px;
+                text-align: justify;
+                font-size: 17.5px;
+                margin: 0px 20px 0px 20px;
+                /* color: rgb(101, 109, 117); */
+                /* border: 2px solid black; */
+                border-radius: 2px;
+                border-bottom: 1px solid #002347;
+            }
+
+            .main-gre-right {
+                float: right;
+                /* border: 1px solid black; */
+                height: 95%;
+                width: 34%;
+                margin-top: 4%;
+
+            }
+            .main-gre-right1 {
+                float: right;
+                /* border: 1px solid black; */
+                height: 95%;
+                width: 34%;
+                margin-top: 0;
+
+            }
+
+
+            .record h3 {
+                text-align: center;
+                width: 100%;
+                color: #002347;
+            }
+
+            .her1 {
+                /* border: 2px solid black; */
+                padding: 5px;
+                font-size: 30px;
+                height: 0px;
+                margin-top: 5px;
+            }
+
+            .record {
+                /* border: 2px solid black; */
+                margin-top: 70px;
+                height: 35%;
+                width: 80%;
+                margin-left: 370px;
+                background-color: rgb(214, 214, 214);
+                border-radius: 15px;
+            }
+
+            .record table {
+                width: 100%;
+                padding: 2px;
+            }
+
+            .record table th {
+                color: #002347;
+                border: 1px solid white;
+                border-radius: 10px;
+
+                /* border-radius: 0px;            */
+                font-size: 20px;
+            }
+
+            .record table th,
+            td {
+                padding: 20px;
+            }
+
+            .record table td {
+                border: 1px solid white;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+
+            .trainer table {
+                color: #002347;
+                margin-top: 0px;
+                padding: 19px;
+                /* border: 1px solid green; */
+                width: 100%;
+            }
+
+            .trainer table tr {
+                /* border: 1px solid black; */
+                text-align: center;
+                font-size: 20px;
+                background-color: rgb(227, 219, 219);
+                border-radius: 0px;
+            }
+
+            .trainer button {
+                width: 60%;
+
+                padding: 10px;
+                font-size: 16;
+                background-color: #002347;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 4px 0 10px 0 grey;
+                font-weight: bold;
+                transition: 0.5s;
+                border: 0;
+            }
+
+            .trainer button:hover {
+                background-color: #ffff00;
+                box-shadow: 4px 0 10px 0 black;
+                cursor: pointer;
+                color: black;
+                font-weight: bold;
+
+            }
+
+            .img1 {
+                border-radius: 2px;
+                /* border: 2px solid black; */
+                border-bottom: 1px solid #002347;
+                width: 90%;
+                height: 30.5%;
+                margin-left: 23px;
+                clear: both;
+
+            }
+
+            .img2 {
+                float: left;
+                margin-left: 20px;
+                padding-top: 20px;
+            }
+
+            .img1 h1 {
+                /* border: 2px solid black; */
+                width: 295px;
+                float: right;
+                padding-top: 10px;
+                font-size: 26px;
+                margin-right: 30px;
+            }
+
+            .img1 p {
+                float: right;
+                /* border: 2px solid black; */
+                margin-right: 40px;
+                margin-top: 5px;
+                font-size: 17px;
+                text-align: justify;
+                width: 300px;
+            }
+
+            .line3 {
+                display: none;
+            }
+
+            @media screen and (max-width:800px) {
+                #head {
+                    /* border: 1px solid black; */
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    height: auto;
+                }
+
+                .line3 {
+                    display: block;
+                    color: black;
+                    float: right;
+                    /* border: 1px solid black; */
+                    font-size: 30px;
+                    margin: 12px 20px 0 0;
+
+                }
+
+                .logo {
+                    margin-top: 10px;
+                    /* margin: 0;
+                    padding: 0; */
+                }
+
+                .updown {
+                    display: none;
+                }
+
+                #ban {
+                    /* border: 2px solid black; */
+                    width: 100%;
+                    margin: 0;
+                    padding: 1% 0 0 0;
+
+                }
+
+                #ban1 {
+                    border: 2px solid black;
+                    width: 100%;
+                    margin: 0;
+                    height: 6%;
+                    /* font-size: ; */
+                    padding: 0;
+                }
+
+                #ban p {
+                    border: 2px solid black;
+                    width: 80%;
+                    color: white;
+                    margin: 0;
+                    /* line-height: 10px;               */
+                    margin-top: 180px;
+                    margin-left: 7px;
+                    font-size: 32px;
+                    padding: 7%;
+                }
+
+                .updown {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .updown ul {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .updown li {
+                    width: 100%;
+                    padding: 0;
+                    margin: 2px 0 2px 0;
+                    text-align: center;
+                }
+
+                .dropdown-content {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    /* position: inherit; */
+                    text-align: center;
+                }
+
+                .dropdown-content a {
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 20px;
+                    margin: 0;
+                    /* position: inherit; */
+                    text-align: center;
+                }
+
+                .main-gre {
+                    width: 100%;
+                    padding: 0;
+                    /* border: 2px solid black; */
+
+                    margin: 0;
+
+
+                }
+
+                .main-gre-left {
+                    width: 100%;
+                    padding: 0;
+                    height: 2000px;
+
+                    /* border: 2px solid black; */
+                    margin: 0;
+
+
+                }
+
+                .main-gre-left img {
+                    width: 90%;
+                    padding: 0;
+                    /* border: 2px solid black; */
+                    margin: 3%;
+                }
+
+                .main-gre-left h2 {
+                    width: 99%;
+
+                    padding: 0;
+                    /* border: 2px solid black; */
+                    margin: 0;
+                }
+
+                .main-gre-left p {
+                    width: 92%;
+                    margin-top: 20px;
+                    padding: 0;
+                    /* border: 2px solid black; */
+                    margin: 3%;
+                }
+
+                .main-gre-left h4 {
+                    width: 99%;
+
+                    padding: 0;
+                    /* border: 2px solid black; */
+                    margin: 0;
+                }
+
+                .record {
+                    width: 99%;
+                    padding: 0;
+                    height: auto;
+                    border: 2px solid black;
+                    margin: 0;
+                    margin-top: 50px;
+                    /* margin-top: 0;             */
+                }
+
+                .record h3 {
+                    /* border: 5px solid black; */
+                    width: 60%;
+                    height: 50px;
+                    font-size: 18px;
+                    margin-right: 20px;
+                    padding: 3%;
+                    margin: 0;
+                }
+
+                .vihu {
+                    /* border: 5px solid black; */
+                    width: 70%;
+                    padding: 0;
+                    margin: 0;
+                }
+                .record table th,
+                td {
+                    width: 20%;
+                    margin: 0;
+                    /* border: 2px solid black; */
+                    padding: 2px;
+                    font-size: 15px;
+                }
+
+                .record table td {
+                    width: 70%;
+                    margin: 0;
+                    /* border: 2px solid rgb(255, 0, 0); */
+                    padding: 2px;
+                    font-size: 13px;
+                }
+
+                /* .record table{
+                width: 100%;
+                
+                padding: 0;
+                border: 5px solid black;
+                margin: 0;              
+                } */
+                .main-gre-right {
+                    width: 90%;
+                    margin-top: 1000px;
+                    height: auto;
+                    padding: 0;
+                    padding-top: 520px;
+                    /* border: 5px solid black; */
+                    margin: 5%;
+                }
+
+                .main-gre-right1 {
+                    width: 90%;
+                    margin-top: 1000px;
+                    height: auto;
+                    padding: 0;
+                    /* border: 5px solid black; */
+                    margin: 5%;
+                }
+
+
+                .trainer {
+                    width: 100%;
+                    height: 360px;
+                    padding: 0;
+                    /* border: 5px solid black; */
+                    margin: 0;
+                }
+
+                .img1 {
+                    width: 92%;
+                    /* margin-top: 100px; */
+                    padding: 0;
+                    height: 100px;
+                    /* border: 7px solid black; */
+                    margin: 0;
+                }
+
+                .img1 h1 {
+                    width: 100%;
+
+                    padding: 0;
+                    /* border: 2px solid black; */
+                    margin: 0;
+                }
+
+                .img1 p {
+                    width: 95%;
+
+                    padding: 2%;
+                    /* border: 2px solid black; */
+                    margin: 0;
+                }
+
+                .img1 img {
+                    width: 100%;
+
+                    padding: 2%;
+                    /* border: 2px solid black; */
+                    margin: 1%;
+                }
+
+                #se10 {
+                    
+                    margin-top: 200px;
+                    height: auto;
+                   padding:0;          
+                   /* border: 1px solid red;    */
+                   width: 100%;
+                   text-align: center;
+                }
+                #se10 img{
+                    width: 40%;
+                    margin: 0 25% 0 25%;
+                    height: auto;
+                }
+                #se1 {
+                    margin: 5%;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    /* border: 1px solid red;  */
+                   padding:0;            
+                   width: 90%;
+                }
+                #se1 h4 {
+                    margin: 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;  
+                   text-align: center;          
+                   width: 90%;
+                }
+                #se1 p{
+                    margin: 4%;
+                    /* border: 1px solid red;  */
+                   padding:0;            
+                   width: 92%;
+                }
+                #se4{
+                    margin: 0 5% 0 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;            
+                   width: 90%;
+                }
+                #se4 h4{
+                    margin: 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;     
+                   text-align: center;       
+                   width: 90%;
+                }
+                #se4 ul{
+                    margin: 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;    
+                   text-align: center;        
+                   width: 90%;
+                }
+                #s7{
+                    margin: 0 5% 0 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;     
+                   height: auto;       
+                   width: 90%;
+                }
+                #s7 h4{
+                    margin: 5%;
+                    /* border: 1px solid red;  */
+                   padding:0;     
+                   text-align: center;  
+                   width: 90%;
+                }
+                #s7 p{
+                    margin: 5%;
+                    /* border: 1px solid red;  */
+                   padding:0; 
+                   text-align: center;             
+                   width: 90%;
+                }
+                #s10 {
+                    /* margin: 5%; */
+                    /* border: 1px solid red;  */
+                   padding:5%;     
+                   text-align: center;  
+                     
+                   width: 90%;
+                }
+                #s10 p{
+                    margin: 0;
+                    /* border: 1px solid red;  */
+                   padding:0; 
+                   margin-top: 0px; 
+                   /* padding-top: 0px;    */
+                  width: 100%;
+                }
+                #s10 p{
+                    margin: 0;
+                    /* border: 1px solid red;  */
+                   padding:0; 
+                   margin-top: 0px; 
+                   /* padding-top: 0px;    */
+                  width: 100%;
+                }
+            
+
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $(".line3").click(function () {
+                    $(".updown").slideToggle();
+                })
+            })
+        </script>
+    </head>
+
+<body>
+    <div id="head">
+        <img src="image/icad.png" class="logo">
+        <div class="line3">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="updown">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT</a></li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn clck" href="#">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="Gre.html">GRE</a>
+                        <a href="Gmat.html">GMAT</a>
+                        <a href="Sat.html">SAT</a>
+                        <a href="Toefl.html">TOEFL</a>
+                    </div>
+                    </li>
+                <li><a href="Contact us.html">CONTACT</a> </li> 
+            </ul>
+        </nav>
+    </div>
+        <div style="background-image: url(image/gre\ new.jpg);" id="container">
+      
+        <div id="ban">
+            <p id="ban1">
+
+                TOEFL Services</p>
+            <h2>
+                <div>
+                    <!-- <div id="ban2">
+                        Home / About us
+                    </div> -->
+
+            </h2>
+        </div>
+        </div>
+    
+    <!-- ----------------------------------Content------------------------------------------------------------- -->
+
+    <div class="main-gre">
+        <div class="main-gre-left">
+            <img src="image/toefl.png" alt="">
+            <br><br><br><br>
+            <h2>TOEFL-Objectives</h2>
+            <p>
+                Test of English as a Foreign Language (TOEFL) is a standardized test to assess the English language
+                proficiency of non-native speakers willing to enroll in colleges/universities in English-speaking
+                countries. It is accepted by more than 11000 reputed universities in more than 150 countries. It is
+                managed and conducted by the Education Testing System (ETS). There are two types of TOEFL exams; TOEFL
+                iBT which is computer-based, and the other one is TOEFL paper-based examination. TOEFL is mostly
+                attempted by students who are planning to pursue higher education abroad.
+
+                TOEFL tests the English language proficiency of non-native English speakers based on four sections-
+                Reading, Listening, Speaking, and Writing. The four sections of TOEFL are designed to assess the overall
+                English language skills and how proficient the applicants are while communicating in English. It is
+                important to check their communication skills before they settle down in an English-speaking country so
+                that they can adjust themselves to Universities and colleges where the mode of instruction is in the
+                English language.
+            </p>
+            <br>
+            <h2>TOEFL-Eligibility</h2>
+            <p>
+                There are no official eligibility criteria as set by the conducting body ETS ( Education Testing System)
+                for the TOEFL exam. The examination is intended for non-native English speakers to take up work or study
+                abroad programs in an English-speaking country. There is no such official eligibility or prerequisite
+                set by the conducting body for the test takers. Both the TOEFL iBT and TOEFL paper-based examination is
+                an open examination to prove English language proficiency and skills before taking admission or applying
+                for the immigration process. The TOEFL examination can be taken by any student or skilled worker from a
+                non-native English-speaking environment. There is no official restriction regarding the minimum or
+                maximum age limit for students to appear for the test. The TOEFL test is designed as per the university
+                level and it is recommended that the test is taken by students who have completed a minimum Class 10 or
+                high school (Class 12) from a recognized board. In terms of academic qualification, there are no minimum
+                and maximum academic qualification requirements for the test takers. There are no e ligibility criteria
+                regarding the academic scores or degree.
+
+            </p>
+            <br>
+            <h4>TOEFL Eligibility: Age Limit</h4>
+            <p>
+                Furthermore, the ETS, the authority that administers this exam, has set no age limit. This exam is
+                divided into four sections: reading, writing, listening and speaking, according to the TOEFL test
+                pattern. Overall, the candidates' performance is given a score of 120.
+            </p>
+            <br>
+            <h4>TOEFL Eligibility: Exam Qualification</h4>
+            <p>
+                TOEFL examination registration can be done through the official website, phone, and email ID. If you
+                want to book your test slot by phone, you need to look for the contact number of the nearest TOEFL
+                examination center. Over the call, you need to share every personal detail as stated in your
+                identification proof. Make sure you offer them accurate details as it is there in the ID proof. You need
+                to confirm the test date and time slot over the phone. Once you are done with the booking, you need to
+                pay the registration fee. It has to be done through online mode, and you will soon receive a
+                confirmation.
+
+            </p>
+            <br>
+            <h2>Course Outline</h2>
+            <p>
+                The TOEFL internet based test Emphasizes on integrated skills and measures all four Language skills.
+
+            <div class="record">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <h3 class="her1">
+                                    TOEFL-Test of English as Foreign Language
+                                </h3>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Reading
+                        </th>
+                        <td>
+                            0-30
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Speaking
+                        </th>
+                        <td>
+                            0-30
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Listening
+                        </th>
+                        <td>
+                            0-30
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Writing
+                        </th>
+                        <td>
+                            0-30
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Maximum Marks
+                        </th>
+                        <td>
+                            120, The score is valid for 2 years.
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-gre-right">
+        <div class="trainer">
+            <table>
+                <tr>
+                    <td>Trainer's Name</td>
+                    <th><b>Durriya Akolawala</b></th>
+                </tr>
+                <tr>
+                    <td>Subject Name </td>
+                    <td>Verbal and IELTS</td>
+                </tr>
+                <tr>
+                    <td>Trainer's Name</td>
+                    <th><b>Shivram Sir</b></th>
+                </tr>
+                <tr>
+                    <td>Subject Name</td>
+                    <td>Quants</td>
+                </tr>
+                <tr>
+                    <th><b>GRE</b></th>
+                    <td>2 Months</td>
+                </tr>
+                <tr>
+                    <th><b>GMAT</b></th>
+                    <td>2 Months</td>
+                </tr>
+                <tr>
+                    <th><b>SAT</b></th>
+                    <td>2 Months</td>
+                </tr>
+                <tr>
+                    <th><b>IELTS</b></th>
+                    <td>1 Month</td>
+                </tr>
+                <tr>
+                    <th>TOEFL</th>
+                    <td>1 Month</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <button>ENROLL THE COURSE</button>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main-gre-right1">
+        <div class="img1">
+            <img class=img2 src="image/can2.png" style="width: 90px;">
+            <h1>Madhumita Roy *****</h1>
+            <p>When I decided to pursue higher studies in the United States, I was recommended to join ICAD by many
+                reliable sources and that turned out to be the best first step towards achieving my dreams.</p>
+        </div>
+        <div class="img1">
+            <img class=img2 src="image/can1.png" style="width: 90px;">
+            <h1>Chiranjeevi Raju *****</h1>
+            <p>People don't care how much you know until they know how much you care. And one thing I felt right from
+                the get go at ICAD was being cared for. I found a group of people who believed in me.</p>
+        </div>
+        <div class="img1">
+            <img class=img2 src="image/can 3.png" style="width: 90px;">
+            <h1>Manmeet Singh Sethi ***</h1>
+            <p>There had been times hard times in my journey right from preparing for GRE to getting in to the
+                universities, but ICAD was always there to guide me and motivate me to overcome obstacles.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="se10">
+        <img src="image/logo icad.jpeg" class="he11">
+
+        <div id="se1">
+            <h4 class="se2">About Icad</h4>
+            <p class="se3"> ICAD is a pioneer institute in the field of training for GRE,TOEFL,GMAT
+                & SAT since 1999. It has successfully placed 4000 students from India in USA.
+            </p>
+        </div>
+        <div id="se4">
+            <h4 class="se5">Quick Links</h4>
+            <ul class="se6">
+                <li>Home</a></li>
+                <li>About us</a></li>
+                <li>GRE</a></li>
+                <li>GMAT</a></li>
+                <li>SAT</a></li>
+                <li>TOEFL</a></li>
+            </ul>
+        </div>
+        <div id="s7">
+            <h4 class="s8">Address</h4>
+            <p class="s9">Dharampeth Tower, W.H.C. Road , Dharampeth Nagpur-440010
+            </p>
+            <h4 class="s8">Contact Us</h4>
+            <p class="s9"> 9763022333 | 9665100333
+            </p>
+        </div>
+
+        <div id="s10">
+            <p class="s11"><a class="pi1" href="https://www.pskitservices.com/"> Copyright ©2023 Icad Insititute|
+                    Develope by PSK Technologies Pvt.Ltd.</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

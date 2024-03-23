@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #head {
+            height: 12%;
+            display: flex;
+            align-items: center;
+            background-color: #EDEAED;
+            position: -webkit-sticky;
+            top: 0;
+            position: sticky;
+            
+            
+
+        }
+            
+
+        .logo {
+            padding-left: 4%;
+            padding-top: 1px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            padding-top: 5px;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 20px;
+            padding-right: 5%;
+            font-size: 21px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+        li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    transition: 0.3s;
+    box-shadow: 0px 8px 10px 0px grey;
+    border-radius: 10px;
+    z-index: 1;
+}
+.dropdown-content a{
+    font-size: 14;
+    color: #261665;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #464c52;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 4px 0 8px 0 grey;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+        .head2 {
+            /* border: 5px solid black; */
+            /* margin-top: 150px; */
+            height: 34%;
+            background-color: #EDEAED;
+
+        }
+
+        #head3 {
+
+            margin: 0px;
+            padding-top: 50px;
+            font-size: 30px;
+            color: #002347;
+            text-align: center;
+        }
+
+        #ban2 {
+            color: #002347;
+            font-size: 30px;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .btn {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn1 {
+            background-color: #FDC632;
+            color: #002347;
+            padding: 12px 20px;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        #ban3 {
+            margin-left: 620px;
+            margin-top: 40px;
+        }
+
+        #pop {
+            background-color: #EDEAED;
+            /* border: 2px solid black; */
+            height: 500px;
+        }
+
+        #sec1 {
+            margin: 10px;
+            /* border: 2px solid black; */
+            background-color: white;
+            text-align: center;
+            width: 300px;
+            height: 400px;
+            float: left;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            border-top-right-radius: 50px;
+            transition: transform 0.5s;
+        }
+
+        #sec1:hover {
+            transform: translateY(-10px);
+        }
+
+        #sec2 {
+
+            background-color: #EDEAED;
+            height: 600px;
+            margin-top: 60px;
+
+        }
+
+        #sec3 {
+            margin: 10px;
+
+            margin-top: 30px;
+
+            width: 290px;
+            height: 510px;
+            float: left;
+            background-color: white;
+            margin-left: 38px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            border-top-right-radius: 50px;
+            transition: transform 0.5s;
+        }
+
+        #sec3:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+
+
+        #head3 {
+            text-align: center;
+            color: #002347;
+            font-size: 30px;
+        }
+
+        #head4 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #pop1 {
+            margin-top: 50px;
+            /* background-color: #EDEAED;
+            border: 1px solid black; */
+        }
+
+        #pop2 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+
+        .row {
+            background-color: #002347;
+            height: 80%;
+            margin-top: 100px;
+
+        }
+
+        /* .coll{
+            padding-top: 100px;
+            padding-left: 150px;
+            color: white;
+            border: 2px solid white;
+            width: 700px;
+            
+        }
+        .coll1{
+            font-size: 40px;
+        }
+        .coll2{
+            font-size: 20px;
+        }
+        .col3{
+            border: 2px solid white;            
+            float: right;           
+        } */
+        .coll {
+            margin: 10px;
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            width: 570px;
+            color: white;
+            height: 150px;
+            float: left;
+            margin-left: 70px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+            /* box-shadow: 0px 8px 16px 0px black; */
+            border-top-right-radius: 50px;
+        }
+
+        .col3 {
+            margin: 10px;
+            border: 2px solid black;
+            background-color: white;
+            /* text-align: center; */
+            width: 300px;
+            height: 380px;
+            float: left;
+            margin-left: 300px;
+            margin-top: 90px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            /* border-top-right-radius: 50px; */
+        }
+
+        input[type=text],
+        select {
+            width: 280px;
+            padding: 12px 20px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .btn2 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        #pop3 {
+            margin: 10px;
+            border: 2px solid black;
+            background-color: white;
+            /* text-align: center; */
+            width: 100px;
+            display: inline-block;
+            height: 100px;
+            /* float: left; */
+            margin-left: 100px;
+            margin-top: 90px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            color: black;
+        }
+
+        #pop5 {
+            margin: 10px;
+            border: 2px solid black;
+            /* float: left; */
+            background-color: white;
+            display: inline-block;
+            /* text-align: center; */
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            margin-left: 100px;
+            /* margin-top: 90px; */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            color: black;
+        }
+
+        #pop4 {
+            margin: 10px;
+            border: 2px solid black;
+            background-color: white;
+            /* text-align: center; */
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            margin-left: 100px;
+            margin-top: 90px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            color: black;
+        }
+
+        .p1 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .p2 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            /* margin-left: 10px; */
+            /* margin-top: 5px; */
+        }
+
+        .p3 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .p4 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt1 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            /* margin-left: 10px; */
+            margin-top: 22px;
+        }
+
+        .p5 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .p6 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt2 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            /* margin-left: 10px; */
+            margin-top: 44px;
+        }
+
+        .p7 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .p8 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt3 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            /* margin-left: 10px; */
+            margin-top: 22px;
+        }
+
+        .p9 {
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .p10 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt4 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            margin-left: 79px;
+            margin-top: 20px;
+
+        }
+
+        .p11 {
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .p12 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt5 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            margin-left: 80px;
+            margin-top: 53px;
+
+        }
+
+        .p13 {
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .p14 {
+            font-size: 20px;
+            text-align: justify;
+            /* border: 2px solid black; */
+            /* margin-top: 30px; */
+        }
+
+        .bt6 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            margin-left: 79px;
+            margin-top: 79px;
+
+        }
+
+        .p15 {
+            font-size: 30px;
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        .p16 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .bt7 {
+            background-color: #002347;
+            color: #FDC632;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            margin-left: 79px;
+            margin-top: 12px;
+
+        }
+
+        #anj {
+            /* float: left; */
+            /* border: 2px solid white; */
+            width: 40%;
+
+        }
+
+        #se5 {
+            /* border: 2px solid white; */
+            margin-top: 50px;
+        }
+
+        #po1 {
+            margin-top: 50px;
+            /* background-color: #EDEAED;
+            border: 1px solid black; */
+        }
+
+        #po2 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+
+        #se2 {
+            background-color: #002347;
+            height: 720px;
+            margin-top: 60px;
+        }
+
+        #se3 {
+            margin: 10px;
+
+            margin-top: 30px;
+            width: 590px;
+            height: 510px;
+            float: left;
+            background-color: white;
+            margin-left: 85px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            border-top-right-radius: 50px;
+            transition: transform 0.5s;
+        }
+        
+
+        -------------------------------- #po3 {
+
+            font-weight: bolder;
+            font-size: 30px;
+            color: white;
+            padding-top: 0px;
+        }
+
+        .po4 {
+            /* text-align: center; */
+            /* font-weight: bolder; */
+            font-size: 20px;
+            color: white;
+        }
+
+        -------------------------------------- #po5 {
+
+            font-weight: bolder;
+            font-size: 30px;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .po6 {
+            /* text-align: center; */
+            /* font-weight: bolder; */
+            font-size: 20px;
+            color: white;
+        }
+
+        /* #se6 {
+            background-color: #EDEAED;
+        /* border: 1px solid black; */
+
+
+        #he3 {
+            text-align: center;
+            /* font-weight: bolder; */
+            font-size: 40px;
+        }
+
+        #he4 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #se7 {
+            background-color: #EDEAED;
+            height: 420px;
+            margin-top: 10px;
+        }
+
+        #se8 {
+            margin: 10px;
+            margin-top: 40px;
+            width: 450px;
+            height: 310px;
+            float: left;
+            background-color: white;
+            margin-left: 85px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-left: 230px;
+            box-shadow: 0px 8px 16px 0px black;
+            border-top-right-radius: 50px;
+
+        }
+
+        #se9 {
+            margin: 10px;
+            margin-top: 40px;
+            width: 450px;
+            height: 310px;
+            float: left;
+            background-color: white;
+            margin-left: 85px;
+            padding: 15px;
+            border-radius: 10px;
+            /* border: 2px solid black; */
+            box-shadow: 0px 8px 16px 0px black;
+            border-top-right-radius: 50px;
+
+        }
+
+        .he5 {
+            margin-left: 55px;
+            padding: 0px;
+            /* border: 2px solid black; */
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .he6 {
+            text-align: center;
+            /* border: 2px solid black; */
+            margin-left: 150px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .he7 {
+            /* border: 2px solid black; */
+            text-align: center;
+            margin-left: 150px;
+            text-align: justify;
+            font-size: 17px;
+
+        }
+
+        .he8 {
+            clear: both;
+            float: right;
+            border: 2px solid black;
+            width: 20%px;
+            margin-right: 10%px;
+        }
+
+        .he9 {
+            text-align: center;
+            border: 2px solid black;
+            width: 50%;
+            float: right;
+            margin-left: 160px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .he10 {
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 90px;
+            width: 80%;
+            text-align: justify;
+            float: right;
+            font-size: 17px;
+
+        }
+
+        #se10 {
+            background-color: #002347;
+            height: 60%;
+            margin-top: 6%;
+        }
+
+        .he11 {
+            margin: 10px;
+            /* width: 320px; */
+            height: 150px;
+            float: left;
+            margin-left: 65px;
+            /* border: 2px solid white; */
+            margin-top: 90px;
+            padding: 15px;
+        }
+
+        #se1 {
+            margin: 10px;
+            width: 320px;
+
+            height: 150px;
+            float: left;
+            margin-left: 45px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se2 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .se3 {
+            color: wheat;
+        }
+
+        #se4 {
+            margin: 10px;
+            width: 220px;
+
+            height: 270px;
+            float: left;
+            margin-left: 40px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .se5 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .se6 {
+            color: wheat;
+            font-size: 20px;
+            list-style: none;
+            line-height: 30px;
+        }
+
+        #s7 {
+            margin: 10px;
+            width: 320px;
+            height: 300px;
+
+            float: left;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .s8 {
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .s9 {
+            color: wheat;
+        }
+
+        #s10 {
+
+            clear: both;
+            margin-top: 200px;
+            text-align: center;
+            font-size: 20px;
+            background-color: #002347;
+        }
+
+        .s11 {
+            color: white;
+            clear: both;
+
+
+        }
+
+        .pi1 {
+            color: white;
+            text-decoration: none;
+        }
+
+        #sec4 {
+
+            width: 80%;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+
+        .row .boxs {
+
+            border-radius: 0px;
+            font-size: 40;
+            color: white;
+            text-align: center;
+            /* display: inline; */
+            padding: 40px;
+            margin: 5px;
+            height: 35px;
+            width: 40px;
+            margin-top: 50px;
+            float: left;
+            border: 2px solid white;
+
+        }
+
+        .do1 {
+            float: left;
+
+        }
+
+        .do2 {
+            float: right;
+            width: 300px;
+        }
+
+        .do2 h1 {
+            /* border: 2px solid black; */
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .do2 h4 {
+            /* border: 2px solid black; */
+            margin-top: 40px;
+            margin-left: 6px;
+        }
+
+        .do2 p {
+            /* border: 2px solid black; */
+            margin-top: 30px;
+            font-size: 17px;
+            width: 300px;
+            text-align: justify;
+        }
+
+        .se6 li a {
+            color: wheat;
+        }
+        .line3{
+            display: none;
+        }
+        @media screen and (max-width:800px){
+            #head{
+                /* border: 1px solid black; */
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                display: block;
+                height: auto;
+            }
+            .line3{
+                display: block;
+                color: black;
+                float: right;
+                /* border: 1px solid black; */
+                font-size: 30px;
+                margin: 12px 20px 0 0;
+
+            }
+            .logo{
+                margin-top: 10px;
+                /* margin: 0;
+                padding: 0; */
+            }
+            .updown{
+                display: none;
+            }
+            .head2{
+                  /* border: 1px solid black; */
+                  padding: 0;
+                margin: 0;
+                width: 100%;
+                
+               
+            }
+            .head2 p{
+                  /* border: 1px solid black; */
+                  padding: 0px;
+                    margin: 0;
+                    width: 100%;
+               
+            }
+            #head4{
+                
+                 padding: 0;
+                    margin: 0;
+                    margin-top: 0;
+                    width: 100%;
+                    
+            }
+            #ban3 {
+                /* border: 1px solid black; */
+                  padding: 2%;
+                    margin: 1%;
+                    margin-top: 30px;
+                    width: 95%;
+            }
+            #ban2 {
+                /* border: 1px solid black; */
+                  padding: 0;
+                    margin: 2%;
+                    margin-top: 30px;
+                    font-size: 23px;
+                    width: 97%;
+            }
+            #col {
+                /* border: 1px solid black; */
+                  padding: 0;
+                    margin: 0;
+                    width: 100%;
+            }
+            #col h2 {
+                /* border: 5px solid black; */
+                  padding: 0;
+                    margin: 0;
+                    width: 100%;
+            }
+            #col p {
+                /* border: 5px solid black; */
+                  padding: 0;
+                    margin: 1%;
+                    width: 95%;
+            }
+            #pop{
+               /* border: 1px solid red;  */
+               margin: 0;
+               height: 1750px;
+               padding: 0;
+               width: 100%;
+            }
+
+            #sec1{
+               /* border: 1px solid red;  */
+               margin: 5%;
+               padding:0;
+               width: 90%;
+               /* height: auto; */
+            }
+            #sec1 h4{ 
+               /* border: 1px solid red;  */
+               margin: 0;
+               font-size: 25px;
+               padding: 0;
+               width: 100%;
+            }
+            #sec1 p{ 
+               /* border: 1px solid red;  */
+               margin: 5%;
+               padding: 2% 2% 2% 2%;
+               width: 85%;
+            }
+            #sec1 .bt{
+                /* border: 1px solid red;  */
+               margin: 0;
+               padding: 5% 2% 5% 2%;
+               width: 55%;
+            }
+            #sec1 .bt1{
+                /* border: 1px solid red;  */
+               margin: 0;
+               padding: 5% 2% 5% 2%;
+               width: 55%;
+            }
+            #sec1 .bt2{
+                /* border: 1px solid red;  */
+               margin: 0;
+               padding-top: 0;
+               padding: 5% 2% 5% 2%;
+               width: 55%;
+            }
+            #sec1 .bt3{
+                /* border: 1px solid red;  */
+               margin: 0;
+               padding: 5% 2% 5% 2%;
+               width: 55%;
+            }
+            #pop1{ 
+               /* border: 1px solid red;  */
+               margin: 5%;
+               /* font-size: 25px; */
+               padding: 0;
+               width: 90%;
+            }
+            #pop1 h2{ 
+               /* border: 1px solid red;  */
+               margin: 5%;
+               /* font-size: 25px; */
+               padding: 0;
+               width: 90%;
+            }
+            #sec2{
+               /* border: 1px solid red;  */
+               margin: 0;
+               height: 2200px;
+               padding: 0;
+               width: 100%;
+            }
+
+            #sec3{
+               /* border: 1px solid red;  */
+               margin: 5%;
+               padding:0;
+               width: 90%;
+              
+            }
+            #sec3 img{
+               /* border: 1px solid red;  */
+               margin: 3%;
+               
+               padding:0;
+               /* width: 0; */
+              
+            }
+            #sec3 h2{
+               /* border: 1px solid red;  */
+               margin: 5%;
+               padding:0;
+               width: 90%;
+              
+            }
+            #sec3 p{
+               /* border: 1px solid red;  */
+               margin: 5%;
+               font-size: 17px;
+               /* padding-top: 20px; */
+               padding:0;
+               width: 90%;
+              
+            }
+            .row{
+                 /* border: 5px solid red;  */
+               margin: 0;
+               height: 750px;
+               padding:0;
+               width: 100%;
+            }
+            .coll{
+                 /* border: 1px solid red;  */
+               margin: 4%;
+               padding:0;
+               text-align: center;
+             
+               width: 90%;
+            }
+            .coll1{
+                 /* border: 1px solid red;  */
+               margin: 0;
+               padding:0;
+               margin-top: 20px;
+               width: 100%;
+            }
+            .coll2{
+                 /* border: 1px solid red;  */
+               margin: 2%;
+               padding:0;
+               margin-top: 20px;
+               /* text-align: justify; */
+               width: 99%;
+            }
+            .coll .boxs{
+                /* border: 1px solid red; */
+                padding: 3%;
+                text-align: center;
+                
+            }
+            .col3{
+                 border: 1px solid red; 
+               margin: 5%;
+               margin-top: 150px;
+               padding:0;
+               
+               /* text-align: justify; */
+               width: 90%;
+            }
+            .col3 .btn2{
+                 /* border: 1px solid red;  */
+               margin: 5%;
+               padding:3% ;
+               padding-right: 20px;
+               
+               /* text-align: justify; */
+               width: 90%;
+            }
+            .col3 h3{
+                 /* border: 1px solid red;  */
+               margin: 3%;
+               padding:2%;
+               
+               /* text-align: justify; */
+               width: 90%;
+            }
+            .col3 p{
+                 /* border: 1px solid red;  */
+               margin: 3%;
+               padding:2%;
+               
+               /* text-align: justify; */
+               width: 90%;
+            }
+            #po1{
+                   border: 1px solid red; 
+               margin: 0;
+               padding:0;            
+               width: 100%;
+            }
+            #se2{
+                border: 1px solid red; 
+               margin: 0;
+               padding:0;  
+               /* height: 1000px;           */
+               width: 100%;
+            }
+            #se3{
+                border: 3px solid black; 
+               margin: 19%;
+               height: 150px;
+               padding:0;            
+               width: 60%;
+            }
+            #se3 img{
+                border: 1px solid red; 
+               margin: 1%;
+               padding:1%;            
+               width: 100%;
+            }
+            #se5{
+                border: 1px solid red; 
+               margin: 0;
+               padding:0;            
+               width: 100%;
+            }
+            #se5 h2{
+                border: 1px solid red; 
+               margin: 0;
+               padding:0;   
+               color: black;         
+               width: 100%;
+            }
+            #se5 p{
+                border: 1px solid red; 
+               margin: 3%;
+               color: white;
+               padding:0;            
+               width: 100%;
+            }
+        }
+
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".line3").click(function(){
+                $(".updown").slideToggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="head">
+        <img src="image/icad.png" class="logo">
+        <div class="line3">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="updown">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT</a></li>
+                <li class="dropdown" style="font-size: 20px; color: black;"><a class="dropbtn" href="">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="Gre.html">GRE</a>
+                        <a href="Gmat.html">GMAT</a>
+                        <a href="Sat.html">SAT</a>
+                        <a href="Toefl.html">TOEFL</a>
+                    </div>
+                    </li>
+                <li><a href="Contact us.html">CONTACT</a> </li> 
+            </ul>
+        </nav>
+    </div>
+    <!-- <div id="ban">
+        <p id="ban1">
+            <b>ICADians got admits from the best Universities of the world</b><br>
+            About Us</p>
+        <h2>
+            <div>
+                <div id="ban2">
+                    Home / About us
+                </div> -->
+
+        </h2>
+    </div> 
+
+    <div class="head2">
+        <p id="head3">
+            <b>ICADians got admits from the best Universities of the world</b>
+        </p>
+        <div>
+            <div id="ban2">
+                GRE | GMAT | SAT | TOEFL
+            </div>
+        </div>
+        <div id="ban3">
+            <a href="#"><input type="button" class="btn" value="learn more"></a>
+            <a href="#"><input type="button" class="btn1" value="see course"></a>
+        </div>
+    </div>
+
+    <div id="head4">
+        <img src="image/icad2.jpg" style="width: 100%; height: 56%;">
+    </div>
+    <div id="col">
+
+        <h2 id="head3">ICAD Services</h2>
+        <p id="head4">We help you to go ABROAD FOR STUDIES</p>
+
+    </div>
+    <div id="pop" >
+        <!-- <div id="sec"> -->
+        <div id="sec1">
+            <img src="image/ica1.jpg" style="height: 100px;">
+            <h4 class="p1">Graduate Record Examination</h4>
+            <p class="p2">GRE is required for all MS & Ph.D programs,
+                except Business, Law and Medicine, for most of the
+                American graduate schools.</p><br>
+            <a href="#"><input class="bt" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec1">
+            <img src="image/ica2.png" style="height: 100px;">
+            <h4 class="p3">Graduate Management Aptitude Test</h4>
+            <p class="p4">GMAT is required for admission to Master's program in Business Administration.
+            </p><br>
+            <a href="#"><input class="bt1" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec1">
+            <img src="image/ica3.png" style="height: 100px;">
+            <h4 class="p5">Scholastic Aptitude Test</h4>
+            <p class="p6">SAT is required for admission to all Bachelors program.</p><br>
+            <a href="#"><input class="bt2" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec1">
+            <img src="image/ica2.png" style="height: 100px;">
+            <h4 class="p7">Test of English as Foreign Language</h4>
+            <p class="p8">The TOEFL Internet based test Emphasizes on integrated skills and measures all four Language
+                skills.
+            </p><br>
+            <a href="#"><input class="bt3" type="button" value="Learn more"><a>
+        </div>
+
+    </div>
+
+    <div id="pop1">
+        <h2 id="pop2">ADIMMISION SERVICES</h2>
+    </div>
+    <div id="sec2">
+        <div id="sec3">
+            <img src="image/i1.png" style="height: 29%; margin-left: 52px;">
+            <h2 class="p9">Online Applications</h2>
+            <p class="p10">Icad provides guidance on submitting online application to the universities & comprehensive
+                checklists for all the universitiesbased on their different requirements. ICAD makes sure that student
+                don't waste their time in correspondence with the universities.</p>
+            <a href="#"><input class="bt4" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec3">
+            <img src="image/i2.png" style="height: 150px; margin-left: 55px;">
+            <h2 class="p11">Preparation of Documents</h2>
+            <p class="p12">ICAD significantly aids student for preparation of various documents including
+                statements of purpose (SOP), letters of recommendation(LOR) , resume, Finacial statements.</p>
+            <a href="#"><input class="bt5" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec3">
+            <img src="image/i3.png" style="height: 30%; margin-left: 63px;">
+            <h2 class="p13">VISA Services</h2>
+            <p class="p14">The Expert advice at ICAD for VISA writing application,VISA Documents, finances and mock VISA
+                interview help
+                ICADians
+                to achieve success rate of almost 100% every year.</p>
+            <a href="#"><input class="bt6" type="button" value="Learn more"><a>
+        </div>
+        <div id="sec3">
+            <img src="image/i4.png" style="height: 150px; width: 250px; margin-left: 25px;">
+            <h2 class="p15">Partial Services</h2>
+            <p class="p16"> Student can also avail following services separately. Training, Testing, Admission
+                Assistance, VISA Services in addition, ICAD also helps for bank loans, pre-depature orientation, alumni
+                help etc, with every facility to take ICADian to United States of America smoothly.</p>
+            <a href="#"><input class="bt7" type="button" value="Learn more"><a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="coll">
+            <h1 class="coll1">Register Now</h1>
+            <p class="coll2">
+                There is a moment in the life of any aspiring astronomer that
+                it is time to buy that first <br>telescope. It’s exciting to think
+                about setting up your own viewing station.
+            </p>
+            <div class="boxs">I</div>
+            <div class="boxs">C</div>
+            <div class="boxs">A</div>
+            <div class="boxs">D</div>
+
+        </div>
+        <div class="col3">
+            <div>
+                <h3>For Enquiry</h3>
+                <p>It is high time for learning</p>
+                <form class="col4">
+                    <input type="text" name="name" placeholder="Your Name" />
+                    <input type="text" name="phone" placeholder="Your Phone Number" />
+                    <input type="text" name="email" placeholder="Your Email Address" />
+                    <input type="text" name="message" placeholder="Your message" />
+
+                    <div>
+                        <button type="submit" class="btn2" name="submit" value="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div id="po1">
+        <h2 id="po2">ICADians in CANADA</h2>
+    </div>
+    <div id="se2">
+        <div id="se3">
+            <img src="image/girl.png" style="height: 100%; width : 100%;">
+            <div id="se5">
+                <h2 id="po5" style="color: white;">POOJA TIPLE</h2>
+                <p class="po6">MS in Electrical Engineering Concordia University.
+                    Canada</p>
+            </div>
+        </div>
+        <div id="se3">
+            <img src="image/boy.png" style="height: 100%; width: 100%;">
+            <div id="sec4">
+                <h2 id="po3" style="color: white;">PUSHPAK JADHAO</h2>
+                <p class="po4">MS in Electronics & Communication University of Ottawa,
+                    Canada</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="se6">
+
+        <h2 id="he3">Testimonial</h2>
+        <p id="he4">Student say About ICAD</p>
+
+    </div>
+    <div id="se7">
+        <div id="se8">
+            <img src="image/can1.png" style="height: 39%; float: left;">
+            <h4 class="he5">Chiranjeevi Raju</h4>
+            <h6 class="he6">MS in Finacial Engg.&Risk Management at Stevens Insitituteof Technology USA</h6>
+            <p class="he7">
+                People don't care how much you know until they know how much you care.
+                And one thing I felt right from the get go at ICAD was being cared for. I found
+                a group of people who believed in me.
+            </p>
+        </div>
+        <div id="se9">
+            <div class="do1">
+                <img src="image/can2.png">
+            </div>
+            <div class="do2">
+                <h1>Madhumita Roy</h1>
+                <h4>MS in Statistics at San Jose State of the Universities USA</h4>
+                <p>
+                    When I decided to pursue higher studies in the United States, I was recommended to join ICAD by
+                    many reliable sources and that turned out to be the best first step towards achieving my dreams.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div id="se10">
+        <img src="image/logo icad.jpeg" class="he11">
+
+        <div id="se1">
+            <h4 class="se2">About Icad</h4>
+            <p class="se3"> ICAD is a pioneer institute in the field of training for GRE,TOEFL,GMAT
+                & SAT since 1999. It has successfully placed 4000 students from India in USA.
+            </p>
+        </div>
+        <div id="se4">
+            <h4 class="se5">Quick Links</h4>
+            <ul class="se6">
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>GRE</a></li>
+                <li><a>GMAT</a></li>
+                <li><a>SAT</a></li>
+                <li><a>TOEFL</a></li>
+            </ul>
+        </div>
+        <div id="s7">
+            <h4 class="s8">Address</h4>
+            <p class="s9">Dharampeth Tower, W.H.C. Road , Dharampeth Nagpur-440010
+            </p>
+            <h4 class="s8">Contact Us</h4>
+            <p class="s9"> 9763022333 | 9665100333
+            </p>
+        </div>
+
+        <div id="s10">
+            <p class="s11"><a class="pi1" href="https://www.pskitservices.com/"> Copyright ©2023 Icad Insititute|
+                    Develope by PSK Technologies Pvt.Ltd.</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
